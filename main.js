@@ -22,10 +22,16 @@ function debounce(func, wait = 10, immediate = true) {
 };
 
 
-function check() {
-  var g = $(window).scrollTop()
-  console.log(g)
+function navEffect() {
+  var checkAt = $(window).scrollTop() + $('header').height()
+  var animateAt = $('.gg1').height()
+  if(checkAt > animateAt) {
+    $('header').addClass('lightgreen')
+  } else {
+    $('header').removeClass('lightgreen')
+  }
+  
 }
 
 
-$(window).on('scroll', debounce(check) )
+$(window).on('scroll', debounce(navEffect) )

@@ -18,6 +18,10 @@ header {
     width: 100%;
 }
 
+header.lightgreen {
+    background: lightgreen;
+}
+
 header a {
     color: black;
     text-decoration: none;
