@@ -26,9 +26,9 @@ function navEffect() {
   var checkAt = $(window).scrollTop() + $('header').height()
   var animateAt = $('.gg1').height()
   if(checkAt > animateAt) {
-    $('header').addClass('lightgreen')
+    $('header').addClass('transition')
   } else {
-    $('header').removeClass('lightgreen')
+    $('header').removeClass('transition')
   }
   
 }

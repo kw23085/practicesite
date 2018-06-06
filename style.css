@@ -16,9 +16,10 @@ header {
     min-height: 60px;
     position: fixed;
     width: 100%;
+    transition: background 1s;
 }
 
-header.lightgreen {
+header.transition {
     background: lightgreen;
 }
 
